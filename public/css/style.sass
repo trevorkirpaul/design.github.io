@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,900')
+@import url('https://fonts.googleapis.com/css?family=Creepster')
+
+//var 
+$font: 'Roboto', sans-serif
+$fontTwo: 'Creepster', serif
+$white: #f9f9f9
+$lightGrey: #e2e2e2
+$darkGrey: #474747
+$black: #1d1e18
+$red: #ff5a5f
+
+*
+	margin: 0
+	padding: 0
+	outline: none
+	box-sizing: border-box
+
+body
+	background-color: $black
+	
+//end global styling
+
+.container
+
+	.landing
+		position: relative
+		width: 100%
+		height: 100vh
+		background-image: url('../img/landing.jpg')
+		background-size: cover
+		background-position: center
+		text-align: right
+
+
+		span			
+			// position: absolute
+			// top: 30%
+			// right: 25%
+
+
+			font-family: $font
+			color: $black
+			
+			font-weight: 600
+
+			background-color: $red
+
+			padding: 5px 15px
+
+		//'RAPPER DUDE'
+		#landingTitle 
+			display: inline-block
+			color: $white
+			font-size: 350%
+
+		//'NEW ALBUM'
+		#landingTitleTwo 
+			display: inline-block
+			font-size: 250%
+			font-weight: 300
+			background-color: $black
+			color: $white
+
+		//'JAN 2017'
+		#landingTitleThree 
+			display: inline-block
+			font-size: 200%
+			font-weight: 600
+
+		#arrow
+			position: absolute
+			right: 55px
+			bottom: 55px
+			color: $red
+		
+	// END OF LANDING SPLASH
+
+
+	.albumInfo
+		background-color: $black
+		padding: 15px
+
+		.sectionTitle
+			text-align: center
+			margin-top: 75px
+			margin-bottom: 50px
+
+			span
+				display: inline-block
+				color: $red
+				font-family: $font
+				font-size: 250%
+				font-weight: 500
+				padding: 10px 15px
+				border: 2.5px solid $red
+
+		
+		.sectionInfo
+			padding: 15px	
+			color: $white
+			font-family: $font
+			max-width: 600px
+			margin: 0 auto
+
+			h2
+				margin-bottom: 25px
+				color: $lightGrey
+			p
+				color: $lightGrey
+
+		#albumArt
+			text-align: center
+			background-image: url('../img/albumart.jpg')
+			background-size: cover
+			background-position: center
+
+			height: 250px
+			width: 250px
+
+			margin: 100px auto 50px auto
+			
+
+			span
+				font-family: $fontTwo
+				font-size: 250%
+				color: $lightGrey
+
+
+		#sectionButtons
+			text-align: center
+
+			button
+				width: 275px
+				margin-bottom: 15px
+				padding: 10px 15px
+
+				background-color: $red
+				color: $black
+				border: none
+
+				cursor: pointer
+				transition: 0.3s
+
+				&:hover
+					background-color: $lightGrey
+					color: $black
+
+	// END AALBUM INFO SECTION
+
+	.footer
+		
+		background-color: $black
+		padding-top: 150px
+		height: 250px
+		
+		text-align: center
+		color: $lightGrey
+		font-family: $font
+
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr
+
+		#left
+			text-align: left
+			padding: 15px
+			
+
+		#middle
+			margin-top: 7px
+			i
+				padding: 5px
+				cursor: pointer
+				transition: 0.2s
+				&:hover
+					color: $red
+
+		#right
+			text-align: right
+			padding: 15px
+
+
+
+
+
+
+
+
+

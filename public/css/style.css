@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,900");
+@import url("https://fonts.googleapis.com/css?family=Creepster");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box; }
+
+body {
+  background-color: #1d1e18; }
+
+.container .landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/landing.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: right; }
+  .container .landing span {
+    font-family: "Roboto", sans-serif;
+    color: #1d1e18;
+    font-weight: 600;
+    background-color: #ff5a5f;
+    padding: 5px 15px; }
+  .container .landing #landingTitle {
+    display: inline-block;
+    color: #f9f9f9;
+    font-size: 350%; }
+  .container .landing #landingTitleTwo {
+    display: inline-block;
+    font-size: 250%;
+    font-weight: 300;
+    background-color: #1d1e18;
+    color: #f9f9f9; }
+  .container .landing #landingTitleThree {
+    display: inline-block;
+    font-size: 200%;
+    font-weight: 600; }
+  .container .landing #arrow {
+    position: absolute;
+    right: 55px;
+    bottom: 55px;
+    color: #ff5a5f; }
+.container .albumInfo {
+  background-color: #1d1e18;
+  padding: 15px; }
+  .container .albumInfo .sectionTitle {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 50px; }
+    .container .albumInfo .sectionTitle span {
+      display: inline-block;
+      color: #ff5a5f;
+      font-family: "Roboto", sans-serif;
+      font-size: 250%;
+      font-weight: 500;
+      padding: 10px 15px;
+      border: 2.5px solid #ff5a5f; }
+  .container .albumInfo .sectionInfo {
+    padding: 15px;
+    color: #f9f9f9;
+    font-family: "Roboto", sans-serif;
+    max-width: 600px;
+    margin: 0 auto; }
+    .container .albumInfo .sectionInfo h2 {
+      margin-bottom: 25px;
+      color: #e2e2e2; }
+    .container .albumInfo .sectionInfo p {
+      color: #e2e2e2; }
+  .container .albumInfo #albumArt {
+    text-align: center;
+    background-image: url("../img/albumart.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 250px;
+    margin: 100px auto 50px auto; }
+    .container .albumInfo #albumArt span {
+      font-family: "Creepster", serif;
+      font-size: 250%;
+      color: #e2e2e2; }
+  .container .albumInfo #sectionButtons {
+    text-align: center; }
+    .container .albumInfo #sectionButtons button {
+      width: 275px;
+      margin-bottom: 15px;
+      padding: 10px 15px;
+      background-color: #ff5a5f;
+      color: #1d1e18;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s; }
+      .container .albumInfo #sectionButtons button:hover {
+        background-color: #e2e2e2;
+        color: #1d1e18; }
+.container .footer {
+  background-color: #1d1e18;
+  padding-top: 150px;
+  height: 250px;
+  text-align: center;
+  color: #e2e2e2;
+  font-family: "Roboto", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  .container .footer #left {
+    text-align: left;
+    padding: 15px; }
+  .container .footer #middle {
+    margin-top: 7px; }
+    .container .footer #middle i {
+      padding: 5px;
+      cursor: pointer;
+      transition: 0.2s; }
+      .container .footer #middle i:hover {
+        color: #ff5a5f; }
+  .container .footer #right {
+    text-align: right;
+    padding: 15px; }
+
+/*# sourceMappingURL=style.css.map */
+
+
+@media (max-width: 400px) {
+
+	.container .landing #landingTitle {
+		font-size: 250%;
+	}
+
+	.container .footer {
+		grid-template-columns: 1fr;
+
+	}
+
+
+}
+
+@media (min-width: 1200px) {
+
+	.container .landing #landingTitle {
+		font-size: 550%;
+	}
+
+	.container .landing #landingTitleTwo {
+		font-size: 450%
+	}
+	.container .landing #landingTitleThree {
+		font-size: 350%
+	}
+
+
+
+
+}
